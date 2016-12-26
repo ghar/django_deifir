@@ -6,5 +6,6 @@ A bash script for fast creation of Django virtual environments with PostgreSQL
 - Then installs virtualenv, Django, Postgres and dependencies
 - Auto updates ~dev_env/\<project_name\>/\<project_name\>/settings.py with correct PostgreSQL settings
 
-Bonus details: 
-Deifir is the Irish word for 'haste' and is pronounced Djeffer
+<strong>sudo bash djangdeifir.sh</strong> to run
+
+Bonus: 'deifir' is the Irish word for 'haste' and is pronounced djeffer
