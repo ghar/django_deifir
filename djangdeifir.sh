@@ -182,7 +182,7 @@ EOF
 
 # Restore secret key
 echo "${dbSettings}" > $settingsFile
-sed -i "s/.*REPLACE_ME.*/$secretKey/" $settingsFile
+sed -i "/REPLACE_ME/c\\$secretKey" $settingsFile
 
 cat << EOF
 
