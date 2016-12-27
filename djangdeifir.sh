@@ -205,4 +205,10 @@ Database Settings
 DB_NAME: $dbname
 DB_USER: $dbuser
 DB_PASS: $dbpass
+
+Try running:
+1. source ~/dev_env/virtenv_$projnm/bin/activate
+2. python ~/dev_env/$projnm/manage.py runserver
+now and visiting localhost:8000
+
 EOF
