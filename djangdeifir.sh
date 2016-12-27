@@ -184,6 +184,15 @@ EOF
 echo "${dbSettings}" > $settingsFile
 sed -i "/REPLACE_ME/c\\$secretKey" $settingsFile
 
+cd ~/dev_env/$projnm/
+source ~/dev_env/virtenv_$projnm/bin/activate
+python manage.py makemigrations
+python manage.py migrate
+echo 
+echo
+echo "Create Django Admin for localhost:8000/admin"
+python manage.py createsuperuser
+
 cat << EOF
 
 +++ $projnm Install Completed +++
